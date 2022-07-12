@@ -1,3 +1,3 @@
 # Web-development-
-Web development internship day 2
-Basic of html tags and elements 
+Web development internship
+Web development internship from iit Bhubneshwar all code 
