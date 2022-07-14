@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            body{
+                background-image: url("image.png");
+                background-size: cover;
+                background-attachment: scroll;
+            }
+            h2{
+                background-image: linear-gradient(90deg,teal,red,yellow);
+                text-transform: uppercase;
+                text-decoration:underline;
+                text-indent: 250px;
+                word-spacing: 150px;
+                line-height: 3.0;
+                padding: 20px;
+                border-radius: 20px;
+            }
+            #mybox{
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                border-radius: 20px;
+                margin: 20px;
+                padding: 20px;
+                animation-name: myanim;
+                animation-duration: 3s;
+                animation-iteration-count: 5;
+                position: relative;
+            }
+            @keyframes myanim {
+                25%{background-color: darkgreen;left:0px;top:0px;}
+                50%{background-color: darkred;left:200px;top:0px;}
+                70%{background-color: blueviolet;left:200px;top:200px;}
+                85%{background-color: purple;left:0px;top:200px;}
+                100%{background-color: olive;left:0px;top:0px;}
+            }
+        </style>
+    </head>
+  <body>
+     <div align="center">
+         <h2>Hello everyone</h2>
+         <div align="center" id="mybox">
+              <h3>Thank You</h3>
+         </div>
+     </div>
+
+  </body>
+</html>
