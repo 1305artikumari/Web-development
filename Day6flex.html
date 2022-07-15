@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            #maindiv{
+                display:flex;
+                flex-direction: column;
+                padding: 10px;
+                margin: 20px;
+                grid-gap: 10px;
+                background-color: crimson;
+                border-radius: 10px;
+            }
+            #maindiv > div{
+                padding: 10px;
+                margin: 20px;
+                grid-gap: 10px;
+                background-color: teal;
+                border-radius: 10px;
+                text-align: center;
+
+            }
+            body{
+                padding-top: 80px;
+            }
+            #Header{
+                position:fixed;
+                top:0px;
+                background-image: linear-gradient(red, green,yellow );
+                width:100%;
+                text-align: center;
+                color:firebrick
+                font-family: 'Gill sans', 'Gill sans MT', calibri, 'Trebuchet MS' ,
+                sans-serif;
+            }
+            #Footer{
+                width:100%;
+                position:fixed;
+                bottom:0px;
+                background-color: darkslategray;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <!-- flex box-> it can be Rows or Columns -->
+        <div id="maindiv">
+            <div id="home">Home</div>
+            <div id="Aboutus">Aboutus</div>
+            <div id="gallery">gallery</div>
+            <div id="contactus">contactus</div>
+            <div id="Workdone">workdone</div>
+        </div>
+        
+            <h2 id="Header">welcome to my page</h2>
+        
+        <div id="footer">
+            <h5>Thank you</h5>
+        </div>
+    </body>
+</html>
