@@ -1,0 +1,13 @@
+#mydiv {
+  background-color: pink;
+}
+#mydiv #myname {
+  color: teal;
+  font-size: 43.5px;
+}
+#mydiv #my2id {
+  color: blue;
+}
+#mydiv #my3id {
+  color: green;
+}/*# sourceMappingURL=Day9sass.css.map */
