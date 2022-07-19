@@ -1,0 +1,17 @@
+// Variable ->storing the data or data container
+$mycolor: pink;
+$mysecondarycolor:teal;
+#mydiv{
+    background-color: $mycolor;
+
+#myname{
+    color:$mysecondarycolor;
+    font-size:23px+20.5px;
+}
+#my2id{
+    color:blue;
+}
+#my3id{
+    color:green;
+}
+}
