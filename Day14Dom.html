@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Dom-> Document object model --> 
+    <!-- Three types of selectors -->
+    <div align="center">
+    <h1 id="greet">Hello</h1>
+    <h2 class="complement">You are Awesome</h2>
+    <h3>Thank you all</h3>
+</div>
+<script>
+    // Id name
+    document.getElementById("greet").innerHTML="This is modified by Dom selectors"
+    // Class name 
+    document.getElementByClassName("complement")[0].innerHTML="Awesomely done"
+    // Tag name
+  document.getElementByTagName("h3")[0].innerHTML="Welcome back"
+
+
+</script>
+</body>
+</html>
