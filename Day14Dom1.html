@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            #mydiv{
+                width: 200px;
+                height: 200px;
+                border-radius: 20px;
+                border-color: teal;
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <!--  Dom events :- an action that occurs as a result of state of change in the elements of Dom tree-->  
+            <h3 id="abc">hello all</h3>
+            <p id="myid"></p>
+            <button onmousedown="greet()">click here!</button><br><br>
+            <!-- Background generator -->
+            <div id="mydiv">
+                <button onclick="change()">Click here to generate background</button>
+            </div>
+        </div>
+        <script>
+            function greet(){
+                document.getElementById("myid").innerHTML="Welcome to my page"
+            }
+
+            function change(){
+                var  r=Math.floor(Math.random()*255)
+                var  g=Math.floor(Math.random()*255)
+                var  b=Math.floor(Math.random()*255)
+                var color="rgb("+r+","+g+","+b+")"
+                console.log(color)
+                document.body.style.background=color
+            }
+        </script>
+
+    </body>
+</html>
