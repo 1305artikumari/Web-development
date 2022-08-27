@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // Global variable -can be accessed anywhere in the program
+            var var1 ="Tom"
+            let let1 ="Jerry"
+            const const1 ="City"
+
+            console.log(let1)
+            // functional scope :-can be accessed only inside a function
+            function Data(){
+                var a=10
+                let b=20
+                const c=30
+                console.log(c)
+                // block scope  : only var can be accesed outside
+                if(30>20){
+                    let e="End task"
+                    //let e="end"
+                    var f="Function"
+                    // var can be redeclare and reassign
+                    var f="Func"
+                    const pi=3.14
+                    //const pi=123
+                    console.log(pi)
+                }
+                console.log(f)
+                //console.log(e)
+                //console.log(pi)
+
+            }
+            //comparision
+            var comp=10
+            //console.log(2==3)//false
+            console.log(2===2)//true
+            //console.log(2=="2")//false
+
+            // array 
+            // homogeneous -> same datatypes
+            var myarray=["Data","Details","Status"]
+            console.log(myarray)
+            // heterogenous -> different datatypes
+            var array2=["da",1,746378.4,true]
+            console.log(array2)
+             // Index number -> printing individuall data
+            console.log(myarray[0])
+            console.log(myarray[1])
+            console.log(myarray[2])
+            console.log(myarray[-1])// undefined
+
+            Data()
+            console.log(var1)
+
+            if(5>10){
+                 console.log("The data is correct")
+            }
+            else{
+                console.log("The data is incorrect")
+            }
+            var username="admin"
+            var password="pass"
+            var username=prompt("Enter the user")
+            var username=prompt("Enter the pass")
+            if(username=="admin"&& password=="pass"){
+                console.log("you are logged in")
+            }
+            else if(username=="admin"|| password=="pass"){
+                console.log("second if condition is correct")
+            }
+            else{
+                print("Enter the correct credentials")
+            }
+            // for loop 
+            for(i=0;i<=10;i++){
+                console.log("The value of count is " +i)
+               }
+                function fizzBuzz(){
+            for(let i = 1; i<=100;i++){
+
+                if(i%3==0){
+                        console.log('Fizz')
+                }
+                   else if(i%5==0){
+                            console.log('Buzz')
+
+
+                    }
+                
+                else if(i%3==0 && i%5==0){
+                            console.log('FizzBuzz')
+                }
+        
+        
+                else{
+                    console.log(i)
+                }
+            }
+
+        
+        }
+        fizzBuzz()   
+
+        // object 
+         var object1={
+            Brand:"Asus",
+            Model:2163,
+            Ram:"128GB",
+            color:"White"
+        }
+        console.log(object1)
+        console.log(object1.Asus)
+
+
+            </script>
+    </body>
+</html>
