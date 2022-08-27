@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            #mydiv{
+                width: 200px;
+                height: 200px;
+                border-radius: 20px;
+                background-color: rgb(105, 22, 184);
+            }
+        </style>
+    </head>
+    <body>
+        <div align="center">
+           
+            <h2 class="data">Check your deatils</h2>
+            <h3> Visit again</h3>
+
+            <!-- dom Event -> events are action that
+             occurs as a result of change in the dom tree-->
+             <h1 id="greet">Hello all</h1>
+             <button onmousedown="id1()" >Click here!</button><br><br>
+             <div id="mydiv"><br><br>
+                <button onclick="bg()">Click here to change background</button>
+             </div>
+             
+    </div>
+    <script>
+        
+        document.getElementsByClassName("data")[0].
+        innerHTML="Verify the data"
+        
+       document.getElementsByTagName("h3")[0].innerHTML="Thank you"
+
+        function id1(){
+            document.getElementById("greet").innerHTML="This is modified by Dom selectors"
+        }
+        // background generator
+        function bg(){
+            var r=Math.floor(Math.random()*255)
+            var g=Math.floor(Math.random()*255)
+            var b=Math.floor(Math.random()*255)
+            var change="rgb("+r +"," +g +"," +b+")"
+            console.log(change)
+            document.querySelector("#mydiv").style.background=change;
+            document.body.style.background=change
+        }
+    </script>
+
+</body>
+</html>
